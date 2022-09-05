@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of page -->
+    <title>Task 1 - Guess how many sweets are in the jar</title>
+
+    <!-- Linking the JavaScript page -->
+    <script src="Task1.js"></script>
+
+    <!--Linking the CSS page -->
+    <link rel="stylesheet" href="Task1.css">
+
+</head>
+<body>
+
+    <!-- Heading / Title -->
+    <h1>Task 1 - Guess how many sweets are in the jar</h1>
+
+    <!-- Image of Jar of Sweets -->
+    <img src="pexels-clem-onojeghuo-175762.jpg" alt="Jar of Sweets" width="200px">
+    <br> <br>
+
+    <!-- Label "Your guess" -->
+    <label for="UserGuessInput">Your guess:</label>
+
+    <!-- Textbox for input -->
+    <input type="text" id="UserGuessInput" onfocus="this.value=''" value="Type answer here">
+    <br>
+
+    <!-- Guess button -->
+    <button onclick="checkGuess(); attempts();" id="BtnGuess">GUESS</button>
+    <br>
+
+    <div id="WinResult"></div>
+    <div id="Result"></div>
+    <div id="Attempts"></div>
+    <div id="Scale"></div>
+
+</body>
+</html>
